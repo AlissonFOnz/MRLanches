@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Host=localhost;Database=mrlanches_users;Username=postgres;Password=your_password"
+  }
+}
