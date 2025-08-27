@@ -6,8 +6,19 @@ Este diretório contém os testes unitários dos controllers da API MRLanches.Us
 
 Os testes estão organizados em arquivos separados por controller:
 - `AuthControllerTests.cs`: Testes do controller de autenticação
-- `UsersControllerTests.cs`: Testes do controller de usuários
+- `UsersControllerTests.cs`: Testes do controller de usuários (COBERTURA COMPLETA de todos os cenários dos endpoints)
 - `TempAuthControllerTests.cs`: Testes do controller temporário de exemplo
+
+## Cobertura dos Testes
+
+O arquivo `UsersControllerTests.cs` cobre todos os cenários relevantes dos endpoints de usuário, incluindo:
+- Criação de usuário (sucesso, erro de negócio, erro interno)
+- Atualização de usuário (sucesso, erro de negócio, erro interno)
+- Exclusão de usuário (sucesso, não encontrado, erro interno)
+- Busca por ID (ADM, MR, usuário comum, não encontrado, forbidden, erro interno)
+- Listagem de usuários (sucesso, erro interno)
+
+Caso precise criar novos testes ou ajustar regras de negócio, utilize este arquivo como referência para garantir a padronização e cobertura.
 
 ## Como Executar os Testes
 
